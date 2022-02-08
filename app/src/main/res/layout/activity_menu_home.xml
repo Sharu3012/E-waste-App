@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Menu_home">
+
+    <TextView
+        android:id="@+id/urname_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="60dp"
+        android:textColor="#070707"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="159dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/urname_menu"
+        tools:srcCompat="@drawable/dp" />
+
+    <TextView
+        android:id="@+id/profile_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="60dp"
+        android:text="Profile"
+        android:textColor="#070707"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_pic" />
+
+    <TextView
+        android:id="@+id/change_pass_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="28dp"
+        android:text="Change Password"
+        android:textColor="#070707"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_m" />
+
+    <TextView
+        android:id="@+id/settings_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="28dp"
+        android:text="Settings"
+        android:textColor="#070707"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_pass_m" />
+
+    <TextView
+        android:id="@+id/contact_us_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="28dp"
+        android:text="Contact Us"
+        android:textColor="#070707"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_m" />
+
+    <Button
+        android:id="@+id/logout_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Logout"
+        android:textSize="16dp"
+        app:backgroundTint="#309FBF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact_us_m" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="57dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_m"
+        app:layout_constraintEnd_toStartOf="@+id/profile_m"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/profile" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="57dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/change_pass_m"
+        app:layout_constraintEnd_toStartOf="@+id/change_pass_m"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/logout" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="57dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_m"
+        app:layout_constraintEnd_toStartOf="@+id/settings_m"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/settings" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="57dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/contact_us_m"
+        app:layout_constraintEnd_toStartOf="@+id/contact_us_m"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/support_agent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

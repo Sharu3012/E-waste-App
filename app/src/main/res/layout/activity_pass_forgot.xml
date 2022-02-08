@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Pass_forgot">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="48dp"
+        android:text="E-Scrap"
+        android:textColor="#2E952E"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/otp_phn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:hint="Enter Phone No"
+        android:inputType="phone"
+        android:textColor="#070707"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="32dp"
+        android:text="You'll get an OTP"
+        android:textColor="#070707"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otp_phn" />
+
+    <Button
+        android:id="@+id/otp_button_s"
+        android:layout_width="121dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        android:layout_marginBottom="108dp"
+        android:text="Submit"
+        app:backgroundTint="#309FBF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:ems="10"
+        android:hint="Enter the OTP"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/otp_button_s"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.828" />
+
+    <Button
+        android:id="@+id/send_otp"
+        android:layout_width="121dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        android:text="Send OTP"
+        app:backgroundTint="#309FBF"
+        app:layout_constraintBottom_toTopOf="@+id/otp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.613" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
